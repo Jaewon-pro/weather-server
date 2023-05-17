@@ -1,7 +1,11 @@
-import Weather from '../app/components/Weather';
+import NavBar from "@/app/components/navbar/navbar";
+import Weather from "@/app/components/weather.module";
 
 export default function WeatherInfo() {
   return (
-    <Weather weather={null} />
+    <>
+      <NavBar />
+      <Weather weather={null} />
+    </>
   );
 }

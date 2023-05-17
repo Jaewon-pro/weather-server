@@ -4,11 +4,11 @@ function Header({ title }: { title: string })  {
   return <h1>{title}</h1>;
 }
 
-export default function () {
+export default function Home() {
   return (
-    <div>
+    <>
       <NavBar />
       <Header title="IoT Project 2023" />
-    </div>
-  );
+    </>
+  )
 }
