@@ -1,11 +1,10 @@
-import NavBar from "@/app/components/navbar/navbar";
+import Layout from "@/app/components/layout";
 import Weather from "@/app/components/weather.module";
 
 export default function WeatherInfo() {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Weather weather={null} />
-    </>
+    </Layout>
   );
 }

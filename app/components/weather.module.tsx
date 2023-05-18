@@ -1,8 +1,6 @@
 import React from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-import HomeLink from '@/app/components/homeLink';
-
 type WeatherProps = {
   recordedAt: Date
   temperature: number
@@ -18,7 +16,7 @@ const Weather: React.FC<{ weather: WeatherProps | any }> = ({ weather }) => {
     {recordedAt: new Date('2023-09-26 05:24:07'), temperature: 44, humidity: 26}];
   
   return (
-    <div>
+    <div className='weather-chart'>
       <LineChart width={500} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
         <XAxis dataKey="recordedAt"/>
         <YAxis/>
@@ -29,7 +27,7 @@ const Weather: React.FC<{ weather: WeatherProps | any }> = ({ weather }) => {
         <Line type="monotone" dataKey="humidity" stroke="#82ca9d" />
       </LineChart>
     </div>
-  )
+  );
 }
 
-export default Weather
+export default Weather;
