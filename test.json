@@ -1,8 +1,0 @@
-[
-  {"recordedAt": "2023-09-25 04:24:07", "temperature": 12, "humidity": 74},
-  {"recordedAt": "2023-09-25 05:24:07", "temperature": 32, "humidity": 64},
-  {"recordedAt": "2023-09-25 06:24:07", "temperature": 54, "humidity": 14},
-  {"recordedAt": "2023-09-25 07:24:07", "temperature": 32, "humidity": 44},
-  {"recordedAt": "2023-09-26 08:24:07", "temperature": 14, "humidity": 26},
-  {"recordedAt": "2023-09-26 09:24:07", "temperature": 14, "humidity": 16}
-]
