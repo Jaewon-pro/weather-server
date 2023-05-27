@@ -11,13 +11,13 @@ export default function WeatherInfo() {
     const fetchContent = async () => {
       const response = await fetch('/api/content');
 
-      const { content } = await response.json();
-      setContent(JSON.parse(content));
+      const { content } = response.status === 200 ? await response.json() : { content: null };
+      setContent(content);
     };
 
     fetchContent(); // Fetch the initial content
   
-    const interval = setInterval(fetchContent, 5000);
+    const interval = setInterval(fetchContent, 2000);
     
     return () => clearInterval(interval); // Clean up the interval on component unmount
   }, []);
@@ -25,7 +25,9 @@ export default function WeatherInfo() {
   return (
     <Layout>
       <Time />
-      <Weather weather={content} />
+      {content !== null ? (
+      <Weather weather={content}/>
+      ) : <p>데이터를 불러오는데 실패했습니다.</p>}
     </Layout>
   );
 }

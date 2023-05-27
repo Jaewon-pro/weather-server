@@ -16,8 +16,8 @@ const Weather: React.FC<{ weather: WeatherProps }> = ({ weather }) => {
         <CartesianGrid stroke="#eee" />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="temperature" stroke="#8884d8" />
-        <Line type="monotone" dataKey="humidity" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="temperature" stroke="#8884d8" isAnimationActive={false}/>
+        <Line type="monotone" dataKey="humidity" stroke="#82ca9d" isAnimationActive={false}/>
       </LineChart>
     </div>
   );
