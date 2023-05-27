@@ -7,7 +7,7 @@ export type WeatherProps = {
   humidity: number
 }
 
-const Weather: React.FC<{ weather: WeatherProps }> = ({ weather }) => {
+const Weather: React.FC<{ weather: WeatherProps[] }> = ({ weather }) => {
   return (
     <div className='weather-chart'>
       <LineChart width={500} height={300} data={weather} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>

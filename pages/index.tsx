@@ -1,6 +1,6 @@
 import HomePage from "@/app/components/homePage";
 
-export default function () {
+export default function Index() {
   return (
     <>
       <HomePage />
