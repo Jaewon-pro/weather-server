@@ -17,7 +17,7 @@ export default function WeatherInfo() {
 
     fetchContent(); // Fetch the initial content
   
-    const interval = setInterval(fetchContent, 2000);
+    const interval = setInterval(fetchContent, 2000); // 2초마다 한 번씩
     
     return () => clearInterval(interval); // Clean up the interval on component unmount
   }, []);
