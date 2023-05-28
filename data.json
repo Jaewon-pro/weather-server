@@ -1,8 +1,8 @@
 [
-  {"recordedAt": "Sat May 27 15:21:44 2023", "temperature": 40.00, "humidity": 32.00},
-  {"recordedAt": "Sat May 27 15:21:46 2023", "temperature": 54.00, "humidity": 38.00},
-  {"recordedAt": "Sat May 27 15:21:48 2023", "temperature": 33.00, "humidity": 19.00},
-  {"recordedAt": "Sat May 27 15:21:50 2023", "temperature": 50.00, "humidity": 25.00},
-  {"recordedAt": "Sat May 27 15:21:52 2023", "temperature": 52.00, "humidity": 52.00},
-  {"recordedAt": "Sat May 27 15:21:54 2023", "temperature": 47.00, "humidity": 13.00}
+  {"recordedAt": "Sun May 28 22:03:37 2023", "temperature": 29.00, "humidity": 59.00},
+  {"recordedAt": "Sun May 28 22:03:39 2023", "temperature": 26.00, "humidity": 55.00},
+  {"recordedAt": "Sun May 28 22:03:41 2023", "temperature": 26.00, "humidity": 52.00},
+  {"recordedAt": "Sun May 28 22:03:43 2023", "temperature": 29.00, "humidity": 53.00},
+  {"recordedAt": "Sun May 28 22:03:45 2023", "temperature": 29.00, "humidity": 59.00},
+  {"recordedAt": "Sun May 28 22:03:47 2023", "temperature": 26.00, "humidity": 52.00}
 ]
