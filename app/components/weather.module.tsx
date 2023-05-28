@@ -13,7 +13,7 @@ const Weather: React.FC<{ weather: WeatherProps[] }> = ({ weather }) => {
       <div className='temperature-chart'>
         <LineChart width={500} height={300} data={weather} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <XAxis dataKey="recordedAt"/>
-          <YAxis/>
+          <YAxis type="number" domain={[0, 50]}/>
           <CartesianGrid stroke="#eee" />
           <Tooltip />
           <Legend />
@@ -23,7 +23,7 @@ const Weather: React.FC<{ weather: WeatherProps[] }> = ({ weather }) => {
         <div className='humidity-chart'>
         <LineChart width={500} height={300} data={weather} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <XAxis dataKey="recordedAt"/>
-          <YAxis/>
+          <YAxis type="number" domain={[20, 90]}/>
           <CartesianGrid stroke="#eee" />
           <Tooltip />
           <Legend />
