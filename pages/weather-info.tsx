@@ -25,9 +25,9 @@ export default function WeatherInfo() {
   return (
     <Layout>
       <Time />
-      {content !== null ? (
-      <Weather weather={content}/>
-      ) : <p>데이터를 불러오는데 실패했습니다.</p>}
+      {content !== null
+      ? <Weather weather={content}/>
+      : <p>데이터를 불러오는데 실패했습니다.</p>}
     </Layout>
   );
 }
